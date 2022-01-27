@@ -1,0 +1,7 @@
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\bin\Debug\1.2.Lab.exe.config
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\bin\Debug\1.2.Lab.exe
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\bin\Debug\1.2.Lab.pdb
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\obj\Debug\1.2.Lab.csprojAssemblyReference.cache
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\obj\Debug\1.2.Lab.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\obj\Debug\1.2.Lab.exe
+C:\Users\Alex\Desktop\от меня до джуна\Veeam\VeeamLabs\Module1\1.2.Lab\1.2.Lab\1.2.Lab\obj\Debug\1.2.Lab.pdb
