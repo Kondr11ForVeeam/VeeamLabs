@@ -20,22 +20,22 @@ namespace _1._3.Lab
               new ElementsWithNames() { Value = 3, Name = "Third" }};
 
             Console.WriteLine("====First task start====");
-            Console.WriteLine(LinqTasks.ConcatenationNames(list, ", "));
+            Console.WriteLine(LinqTasks<ElementsWithNames>.ConcatenationNames(list, ", "));
             Console.WriteLine("====First task end====\n");
 
             Console.WriteLine("====Second task start====");
-            list = LinqTasks.FindElementsWithLengthMoreThanCount(list).ToList();
-            LinqTasks.WriteCollention(list);
+            list = LinqTasks<ElementsWithNames>.FindElementsWithLengthMoreThanCount(list).ToList();
+            LinqTasks<ElementsWithNames>.WriteCollention(list);
             Console.WriteLine("====Second task end====\n");
 
             Console.WriteLine("====Third task start====");
-            LinqTasks.WordsGroups("Это что же получается: ходишь, ходишь в школу, а потом бац - вторая смена");
+            LinqTasks<ElementsWithNames>.WordsGroups("Это что же получается: ходишь, ходишь в школу, а потом бац - вторая смена");
             Console.WriteLine("====Third task end====\n");
 
             Console.WriteLine("====Fourth task start====");
             var dic = new Dictionary<string, string>() { {"THIS", "ЭТА" }, { "DOG", "СОБАКА" }, { "EATS", "ЕСТ" } ,
                 { "TOO", "СЛИШКОМ" }, { "MUCH", "МНОГО" }, {"VEGETABLES", "ОВОЩЕЙ" }, {"AFTER", "ПОСЛЕ" }, {"LUNCH", "ОБЕДА" } };
-            Console.WriteLine(LinqTasks.GetBook("This dog eats too much vegetables after lunch", dic, 3));
+            Console.WriteLine(LinqTasks<ElementsWithNames>.GetBook("This dog eats too much vegetables after lunch", dic, 3));
             Console.WriteLine("====Fourth task end====\n");
             Console.ReadKey();
         }
@@ -43,13 +43,13 @@ namespace _1._3.Lab
 
     }
 
-    public static class LinqTasks
+    public static class LinqTasks<T> where T: ElementsWithNames
     {
-        public static string ConcatenationNames(IEnumerable<ElementsWithNames> collection, string delimeter)
+        public static string ConcatenationNames(IEnumerable<T> collection, string delimeter)
         {
             return string.Join(delimeter, collection.Skip(3).Select(col => col.Name));
         }
-        public static IEnumerable<ElementsWithNames> FindElementsWithLengthMoreThanCount(IEnumerable<ElementsWithNames> collection)
+        public static IEnumerable<T> FindElementsWithLengthMoreThanCount(IEnumerable<T> collection)
         {
             int index = 0;
             return from el in collection
@@ -58,7 +58,7 @@ namespace _1._3.Lab
                    select el;
         }
 
-        public static void WriteCollention(IEnumerable<ElementsWithNames> collection)
+        public static void WriteCollention(IEnumerable<T> collection)
         {
             foreach (var el in collection)
                 Console.WriteLine($"Name: {el.Name}, Value: {el.Value}");
